@@ -23,6 +23,13 @@ App Engine application for the Udacity training course.
 1. (Optional) Generate your client library(ies) with [the endpoints tool][6].
 1. Deploy your application.
 
+## Task1: Add Sessions to a Conference - design explaination
+Session Datastore entity has all String properties except duration (IntegerProperty) and date (DateProperty). 
+I designed speaker as String because it is the simplest solution and meets the requirements. It can be easily extended for further purpose if needed.
+The duration propertied is Integer because it can be represented by number of minutes.
+The field typeOfSession is string because it is enumeration in SessionForm and it is easy to convert in the same way as in Profile is teeShirtSize field.
+The start is string because it is the easiest in use and meet the requirement that it should be ordered.
+The fields date is Date and highlights is String because it seems natural choice. 
 
 [1]: https://developers.google.com/appengine
 [2]: http://python.org
